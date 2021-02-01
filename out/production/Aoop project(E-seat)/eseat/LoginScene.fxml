@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eseat.LoginSceneController">
+   <children>
+      <Pane layoutX="7.0" layoutY="27.0" prefHeight="100.0" prefWidth="750.0" style="-fx-background-color: #d4d2cf;">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="206.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../eseat.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="634.0" layoutY="37.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="28.0" prefWidth="61.0" style="-fx-background-color: #d4d2cf;" text="Exit" textFill="#f27100">
+               <font>
+                  <Font name="Bodoni MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutX="7.0" layoutY="156.0" prefHeight="250.0" prefWidth="750.0" style="-fx-background-color: #d4d2cf;">
+         <children>
+            <TextField fx:id="userID" layoutX="308.0" layoutY="67.0" promptText="User ID...">
+               <font>
+                  <Font name="Elephant" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="308.0" layoutY="140.0" promptText="Password...">
+               <font>
+                  <Font name="Elephant" size="12.0" />
+               </font></PasswordField>
+            <Button layoutX="349.0" layoutY="205.0" mnemonicParsing="false" onAction="#login" prefHeight="23.0" prefWidth="103.0" style="-fx-background-color: #ed9107;" text="Log-in">
+               <font>
+                  <Font name="Modern No. 20" size="15.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="70.0" layoutY="209.0" text="Forget Password?" />
+            <Label layoutX="195.0" layoutY="69.0" text="User ID">
+               <font>
+                  <Font name="Modern No. 20" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="186.0" layoutY="142.0" text="Password">
+               <font>
+                  <Font name="Modern No. 20" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="WrongIDPass" layoutX="525.0" layoutY="103.0" prefHeight="28.0" prefWidth="200.0" textFill="#970d0d">
+               <font>
+                  <Font name="Bodoni MT Black" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="185.0" layoutY="462.0" text="Copyright © 2020-2021 Md. hasibul huq shanto All rights reserved." />
+   </children>
+</AnchorPane>

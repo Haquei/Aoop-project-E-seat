@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eseat.MainSceneController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="850.0" style="-fx-background-color: #d9830b;">
+         <children>
+            <Button layoutX="762.0" layoutY="25.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #d9830b;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Button>
+            <Line endX="-100.0" endY="50.0" layoutX="845.0" layoutY="15.0" startX="-100.0" />
+            <Label layoutX="34.0" layoutY="22.0" prefHeight="17.0" prefWidth="425.0" text="Welcom to E-Seat Service">
+               <font>
+                  <Font name="Elephant" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.8666666666666667" endY="1.0">
+                     <stops>
+                        <Stop color="#222120" />
+                        <Stop color="#f8f8f7" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="247.0" layoutX="52.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../78424937_674143836322740_7554271832082219008_n.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="-100.0" endY="379.0" layoutX="733.0" layoutY="125.0" startX="-100.0" />
+      <Button layoutX="414.0" layoutY="254.0" mnemonicParsing="false" onAction="#shatolbus" prefHeight="25.0" prefWidth="95.0" text="Open Service" />
+      <Label layoutX="425.0" layoutY="215.0" text="Shatol Bus">
+         <font>
+            <Font name="Forte" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="131.0" prefHeight="38.0" prefWidth="225.0" text="Shatol Service">
+         <font>
+            <Font name="Elephant" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e87c09" />
+                  <Stop color="#1e1b1b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="658.0" layoutY="213.0" prefHeight="17.0" prefWidth="170.0" text="Long Route Service">
+         <font>
+            <Font name="Elephant" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e17406" />
+                  <Stop color="#e17406" offset="0.007662835249042145" />
+                  <Stop color="#eb4305" offset="0.007662835249042145" />
+                  <Stop color="#1e1b1b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="700.0" layoutY="343.0" mnemonicParsing="false" onAction="#login2" prefHeight="26.0" prefWidth="72.0" text="Log-in">
+         <font>
+            <Font name="Modern No. 20" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="647.0" layoutY="444.0" text="Note: Only if you Have registred for " />
+      <Label layoutX="652.0" layoutY="465.0" text="this service, then you can use it." />
+      <Label layoutX="138.0" layoutY="505.0" prefHeight="17.0" prefWidth="339.0" text="Shatol Service is open for all UIU students and teachers/staffs" />
+      <PasswordField fx:id="password" layoutX="661.0" layoutY="298.0" promptText="Password" />
+      <TextField fx:id="userID" layoutX="661.0" layoutY="254.0" promptText="User ID">
+         <font>
+            <Font name="Bodoni MT" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="410.0" layoutY="348.0" text="UIU to Natunbazar*" />
+      <Label fx:id="WrongIDPass" layoutX="654.0" layoutY="387.0" prefHeight="38.0" prefWidth="167.0" text="Label" textFill="#941717" />
+   </children>
+</AnchorPane>
